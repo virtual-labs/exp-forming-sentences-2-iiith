@@ -7,8 +7,9 @@ Which of these is a valid sentence?
 5. No Parking is allowed.
 
 
-<br/>
-<br/>
+
+
+
 1. खाते खाते राम सो गया
 2. राम खाते खाते सो गया
 3. राम खाता खाते सो गया
