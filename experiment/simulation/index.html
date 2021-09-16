@@ -3,13 +3,24 @@
 <head>
 	<!-- Add CSS at the head of HTML file -->
     <link rel="stylesheet" href="./css/main.css">
+<script type="text/javascript">
+
+function getOption(lang){
+	if(lang=="null")
+	{
+		alert("Select language");
+		return;
+	}
+	$('#words_sentence').load('CLexp2.php?lang='+lang+'&words_selected=%&words=%&possible_sent=%&turn=0&position=%');
+}
+
+</script>
 </head>
 <body>
   <div id="FORM_SENTENCES_2">
     <div id="selectLanguage" style="text-align:center">
       <select autocomplete="off" name="lang" onchange="getOption(this.value);">
 	<option value="null">---Select Language---</option>
-	<option );'="" value="english">English</option>
 		   <option );'="" value="hindi">Hindi</option>
       </select>
     </div>
@@ -19,6 +30,7 @@
 </div>						</div>
 
 	<!-- Add JS at the bottom of HTML file --> 
+    <script src="../js/jquery.js"></script>
         <script src="./js/main.js"></script>
 </body>
 </html>
